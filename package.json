@@ -1,0 +1,17 @@
+{
+  "name": "crowbar",
+  "version": "0.0.0",
+  "description": "crowbar.js ==========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/classdojo/crowbar.js.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "ca7b17c347eb07ef0e3bbe24782a5c139e6dbf2e"
+}
