@@ -1,4 +1,22 @@
-crowbar.js
-==========
+```javascript
+var crowbar = require("crowbar"),
+router  = crowbar.router();
 
-routing library for the front-end
+
+router.on({
+  "/": {
+    enter: function(route) {
+      route.target = new BackboneView();
+      route.target.render();
+    },
+    route: {
+      "/students/:student": {
+        enter: function(route) {
+          route.target = new StudentsView({ el: route.target.$("#content") })
+          route.target.render();
+        }
+      }
+    }
+  }
+});
+```
