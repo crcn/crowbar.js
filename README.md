@@ -14,13 +14,11 @@ router.on({
     route: {
       "/students/:student": {
         enter: function(route) {
-          route.target = new StudentsView({ el: route.target.$("#content") })
+          route.target = new StudentsView({ el: route.parent.target.$("#content") })
           route.target.render();
         },
         exit: function(route) {
-          
-          //target is still the backbone view
-          route.target.$("#content").html();
+          route.parent.target.$("#content").html();
         }
       }
     }
