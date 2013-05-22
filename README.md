@@ -7,15 +7,15 @@ router.on({
   
   //setup the main application on enter
   "/": {
-    enter: function(route) {
+    enter: function(route, next) {
       route.target = new BackboneView();
-      route.target.render();
+      route.target.render(next);
     },
     route: {
       "/students/:student": {
-        enter: function(route) {
+        enter: function(route, next) {
           route.target = new StudentsView({ el: route.parent.target.$("#content") })
-          route.target.render();
+          route.target.render(next);
         },
         exit: function(route) {
           route.parent.target.$("#content").html();
