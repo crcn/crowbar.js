@@ -19,4 +19,7 @@ router.on({
     }
   }
 });
+
+
+router.reflect(new crowbard.reflectors.HttpReflector());
 ```
