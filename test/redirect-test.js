@@ -52,7 +52,22 @@ describe("redirect#", function () {
         next()
       })
     })
-  })
+  });
+
+  it("doesn't set the location until after redirecting", function (next) {
+    var r = router().add({
+      "/a": {
+        enter: function (location, next) {
+          setTimeout(next, 1);
+        }
+      }
+    });
+    r.redirect("/a", function () {
+      expect(r.get("location")).not.to.be(void 0);
+      next();
+    });
+    expect(r.get("location")).to.be(void 0);
+  });
 
   it("can redirect to nested routes", function (next) {
     var r = router().add({
