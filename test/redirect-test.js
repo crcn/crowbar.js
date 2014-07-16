@@ -304,7 +304,7 @@ describe("redirect#", function () {
     var r = router().add({
       "/a": {
         enter: function (r, next) {
-          r.redirect("/b");
+          r.redirect("/b", next);
         }
       },
       "/b": {}
@@ -320,7 +320,7 @@ describe("redirect#", function () {
     var r = router().add({
       "/a": {
         enter: function (r, next) {
-          r.redirect("/b");
+          r.redirect("/b", next);
         }
       },
       "/b": {}

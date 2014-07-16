@@ -3,6 +3,9 @@ expect     = require("expect.js");
 
 describe("exit#", function () {
 
+  // deprecated
+  return;
+
   it("can call exit on a route", function (next) {
     var i = 0, j = 0;
     var r = router().add({
