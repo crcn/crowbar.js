@@ -91,6 +91,33 @@ describe("redirect#", function () {
   });
 
 
+  it("doesn't hit the original route on redirect", function (next) {
+
+    var i = 0;
+
+    var r = router().add({
+      "/a": {
+        enter: [function (location, next) {
+          location.redirect("/b", next);
+        }, function (next) {
+          i++;
+        }]
+      },
+      "/b": {
+        enter: function (location, next) {
+          i++;
+          next();
+        }
+      }
+    });
+
+    r.redirect("/a", function (err, location) {
+      expect(i).to.be(1);
+      next();
+    });
+  });
+
+
   it("merges queries from the previous request", function (next) {
     var r = router().add({
       "/a": {

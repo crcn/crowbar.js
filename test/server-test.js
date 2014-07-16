@@ -16,7 +16,7 @@ describe("server#", function () {
     })
     p = server.listen(port);
 
-    setTimeout(next, 100);
+    setTimeout(next, 50);
   });
 
   it("can redirect to a simple route", function(next) {
