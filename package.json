@@ -1,6 +1,6 @@
 {
   "name": "crowbar",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "HTTP Router for Mojo.js",
   "main": "./lib/index.js",
   "scripts": {
