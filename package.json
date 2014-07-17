@@ -1,6 +1,6 @@
 {
   "name": "crowbar",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "HTTP Router for Mojo.js",
   "main": "./lib/index.js",
   "scripts": {
@@ -43,7 +43,8 @@
     "comerr": "0.0.x",
     "toarray": "0.0.1",
     "mediocre": "0.0.x",
-    "hasher": "1.2.0"
+    "hasher": "1.2.0",
+    "outcome": "0.0.18"
   },
   "devDependencies": {
     "expect.js": "0.3.1",
