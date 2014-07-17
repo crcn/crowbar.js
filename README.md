@@ -2,7 +2,7 @@ Crowbar HTTP Router [![Alt ci](https://travis-ci.org/classdojo/crowbar.js.png)](
 
 [![Testling](https://ci.testling.com/classdojo/crowbar.js.png)](https://ci.testling.com/classdojo/crowbar.js)
 
-Kubrik is a flexible routing system inspired by [express](http://expressjs.com/), and [director](https://github.com/flatiron/director). It's built specifically
+Crowbar is a flexible routing system inspired by [express](http://expressjs.com/), and [director](https://github.com/flatiron/director). It's built specifically
 for the browser, but it can also be used for other platforms such as node, or any mobile platform.
 
 ### Features
@@ -15,7 +15,7 @@ for the browser, but it can also be used for other platforms such as node, or an
 ### Example
 
 ```javascript
-var router = require("kubrick")();
+var router = require("crowbar")();
 
 function auth (location, next) {
   // authenticate here
