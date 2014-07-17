@@ -40,6 +40,25 @@ describe("server#", function () {
     })
   });
 
+  it("continues if there are no found routes", function(next) {
+
+    var i = 0;
+    
+    r.route({
+      "/a": {
+        states: {
+          a: "b",
+          b: "c"
+        }
+      }
+    });
+
+    request.get("http://localhost:"+port+"/b", function (err, res, body) {
+      expect(res.statusCode).to.be(200);
+      next();
+    })
+  });
+
   after(function () {
     p.close();
   })
