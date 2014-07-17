@@ -1,0 +1,244 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/craig/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/tmp.tgz
+12 verbose folder .
+13 info prepublish crowbar@0.1.14
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/craig/.npm/1f1177db-tar.lock
+16 silly lockFile 6ddc045b-91439-0-5246561071835458-tmp-tgz tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/tmp.tgz
+17 verbose lock tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/tmp.tgz /Users/craig/.npm/6ddc045b-91439-0-5246561071835458-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 6ddc045b-91439-0-5246561071835458-tmp-tgz tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/tmp.tgz
+21 silly lockFile 6ddc045b-91439-0-5246561071835458-tmp-tgz tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/tmp.tgz
+22 verbose tar unpack /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/tmp.tgz
+23 silly lockFile 12ecb9c0-91439-0-5246561071835458-package tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/package
+24 verbose lock tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/package /Users/craig/.npm/12ecb9c0-91439-0-5246561071835458-package.lock
+25 silly lockFile 6ddc045b-91439-0-5246561071835458-tmp-tgz tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/tmp.tgz
+26 verbose lock tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/tmp.tgz /Users/craig/.npm/6ddc045b-91439-0-5246561071835458-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry .travis.yml
+32 silly gunzTarPerm extractEntry coverage/coverage.json
+33 silly gunzTarPerm extractEntry coverage/lcov-report/prettify.js
+34 silly gunzTarPerm extractEntry coverage/lcov-report/index.html
+35 silly gunzTarPerm extractEntry coverage/lcov-report/lib/decorators/enterExit.js.html
+36 silly gunzTarPerm extractEntry coverage/lcov-report/lib/decorators/index.html
+37 silly gunzTarPerm extractEntry coverage/lcov-report/lib/decorators/index.js.html
+38 silly gunzTarPerm extractEntry coverage/lcov-report/lib/decorators/parentEnterExit.js.html
+39 silly gunzTarPerm extractEntry coverage/lcov-report/lib/decorators/states.js.html
+40 silly gunzTarPerm extractEntry coverage/lcov-report/lib/index.html
+41 silly gunzTarPerm extractEntry coverage/lcov-report/lib/index.js.html
+42 silly gunzTarPerm extractEntry coverage/lcov-report/lib/plugins/index.html
+43 silly gunzTarPerm extractEntry coverage/lcov-report/lib/plugins/param.js.html
+44 silly gunzTarPerm extractEntry coverage/lcov-report/lib/request.js.html
+45 silly gunzTarPerm extractEntry coverage/lcov-report/lib/route.js.html
+46 silly gunzTarPerm extractEntry coverage/lcov-report/lib/router.js.html
+47 silly gunzTarPerm extractEntry coverage/lcov-report/lib/routes.js.html
+48 silly gunzTarPerm extractEntry coverage/lcov-report/prettify.css
+49 silly gunzTarPerm extractEntry coverage/lcov.info
+50 silly gunzTarPerm extractEntry lib/index.js
+51 silly gunzTarPerm extractEntry lib/location.js
+52 silly gunzTarPerm extractEntry lib/route.js
+53 silly gunzTarPerm extractEntry lib/router.js
+54 silly gunzTarPerm extractEntry lib/routes.js
+55 silly gunzTarPerm extractEntry lib/decorators/enterExit.js
+56 silly gunzTarPerm extractEntry lib/decorators/index.js
+57 silly gunzTarPerm extractEntry lib/decorators/parentEnterExit.js
+58 silly gunzTarPerm extractEntry lib/decorators/redirect.js
+59 silly gunzTarPerm extractEntry lib/decorators/states.js
+60 silly gunzTarPerm extractEntry lib/listeners/http.js
+61 silly gunzTarPerm extractEntry lib/listeners/index.js
+62 silly gunzTarPerm extractEntry lib/plugins/param.js
+63 silly gunzTarPerm extractEntry makefile
+64 silly gunzTarPerm extractEntry test/enter-test.js
+65 silly gunzTarPerm extractEntry test/exit-test.js
+66 silly gunzTarPerm extractEntry test/find-route-test.js
+67 silly gunzTarPerm extractEntry test/listener-test.js
+68 silly gunzTarPerm extractEntry test/params-test.js
+69 silly gunzTarPerm extractEntry test/plugins-test.js
+70 silly gunzTarPerm extractEntry test/redirect-test.js
+71 silly gunzTarPerm extractEntry test/route-test.js
+72 silly gunzTarPerm extractEntry test/server-test.js
+73 silly gunzTarPerm extractEntry test/states-test.js
+74 silly lockFile 12ecb9c0-91439-0-5246561071835458-package tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/package
+75 silly lockFile 12ecb9c0-91439-0-5246561071835458-package tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/package
+76 silly lockFile 6ddc045b-91439-0-5246561071835458-tmp-tgz tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/tmp.tgz
+77 silly lockFile 6ddc045b-91439-0-5246561071835458-tmp-tgz tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/tmp.tgz
+78 verbose tar pack [ '/Users/craig/.npm/crowbar/0.1.14/package.tgz',
+78 verbose tar pack   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/package' ]
+79 verbose tarball /Users/craig/.npm/crowbar/0.1.14/package.tgz
+80 verbose folder /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/package
+81 silly lockFile 12ecb9c0-91439-0-5246561071835458-package tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/package
+82 verbose lock tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/package /Users/craig/.npm/12ecb9c0-91439-0-5246561071835458-package.lock
+83 silly lockFile 03e169f8-g-npm-crowbar-0-1-14-package-tgz tar:///Users/craig/.npm/crowbar/0.1.14/package.tgz
+84 verbose lock tar:///Users/craig/.npm/crowbar/0.1.14/package.tgz /Users/craig/.npm/03e169f8-g-npm-crowbar-0-1-14-package-tgz.lock
+85 silly lockFile 12ecb9c0-91439-0-5246561071835458-package tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/package
+86 silly lockFile 12ecb9c0-91439-0-5246561071835458-package tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-33239-b-rPiv4u/1405569691439-0.5246561071835458/package
+87 silly lockFile 03e169f8-g-npm-crowbar-0-1-14-package-tgz tar:///Users/craig/.npm/crowbar/0.1.14/package.tgz
+88 silly lockFile 03e169f8-g-npm-crowbar-0-1-14-package-tgz tar:///Users/craig/.npm/crowbar/0.1.14/package.tgz
+89 silly lockFile 40926e26-craig-npm-crowbar-0-1-14-package /Users/craig/.npm/crowbar/0.1.14/package
+90 verbose lock /Users/craig/.npm/crowbar/0.1.14/package /Users/craig/.npm/40926e26-craig-npm-crowbar-0-1-14-package.lock
+91 silly lockFile 40926e26-craig-npm-crowbar-0-1-14-package /Users/craig/.npm/crowbar/0.1.14/package
+92 silly lockFile 40926e26-craig-npm-crowbar-0-1-14-package /Users/craig/.npm/crowbar/0.1.14/package
+93 verbose tar unpack /Users/craig/.npm/crowbar/0.1.14/package.tgz
+94 silly lockFile f9dfc510-craig-npm-crowbar-0-1-14-package tar:///Users/craig/.npm/crowbar/0.1.14/package
+95 verbose lock tar:///Users/craig/.npm/crowbar/0.1.14/package /Users/craig/.npm/f9dfc510-craig-npm-crowbar-0-1-14-package.lock
+96 silly lockFile 03e169f8-g-npm-crowbar-0-1-14-package-tgz tar:///Users/craig/.npm/crowbar/0.1.14/package.tgz
+97 verbose lock tar:///Users/craig/.npm/crowbar/0.1.14/package.tgz /Users/craig/.npm/03e169f8-g-npm-crowbar-0-1-14-package-tgz.lock
+98 silly gunzTarPerm modes [ '755', '644' ]
+99 silly gunzTarPerm extractEntry package.json
+100 silly gunzTarPerm extractEntry .npmignore
+101 silly gunzTarPerm extractEntry README.md
+102 silly gunzTarPerm extractEntry .travis.yml
+103 silly gunzTarPerm extractEntry coverage/coverage.json
+104 silly gunzTarPerm extractEntry coverage/lcov-report/prettify.js
+105 silly gunzTarPerm extractEntry coverage/lcov-report/index.html
+106 silly gunzTarPerm extractEntry coverage/lcov-report/lib/decorators/enterExit.js.html
+107 silly gunzTarPerm extractEntry coverage/lcov-report/lib/decorators/index.html
+108 silly gunzTarPerm extractEntry coverage/lcov-report/lib/decorators/index.js.html
+109 silly gunzTarPerm extractEntry coverage/lcov-report/lib/decorators/parentEnterExit.js.html
+110 silly gunzTarPerm extractEntry coverage/lcov-report/lib/decorators/states.js.html
+111 silly gunzTarPerm extractEntry coverage/lcov-report/lib/index.html
+112 silly gunzTarPerm extractEntry coverage/lcov-report/lib/index.js.html
+113 silly gunzTarPerm extractEntry coverage/lcov-report/lib/plugins/index.html
+114 silly gunzTarPerm extractEntry coverage/lcov-report/lib/plugins/param.js.html
+115 silly gunzTarPerm extractEntry coverage/lcov-report/lib/request.js.html
+116 silly gunzTarPerm extractEntry coverage/lcov-report/lib/route.js.html
+117 silly gunzTarPerm extractEntry coverage/lcov-report/lib/router.js.html
+118 silly gunzTarPerm extractEntry coverage/lcov-report/lib/routes.js.html
+119 silly gunzTarPerm extractEntry coverage/lcov-report/prettify.css
+120 silly gunzTarPerm extractEntry coverage/lcov.info
+121 silly gunzTarPerm extractEntry lib/index.js
+122 silly gunzTarPerm extractEntry lib/location.js
+123 silly gunzTarPerm extractEntry lib/route.js
+124 silly gunzTarPerm extractEntry lib/router.js
+125 silly gunzTarPerm extractEntry lib/routes.js
+126 silly gunzTarPerm extractEntry lib/decorators/enterExit.js
+127 silly gunzTarPerm extractEntry lib/decorators/index.js
+128 silly gunzTarPerm extractEntry lib/decorators/parentEnterExit.js
+129 silly gunzTarPerm extractEntry lib/decorators/redirect.js
+130 silly gunzTarPerm extractEntry lib/decorators/states.js
+131 silly gunzTarPerm extractEntry lib/listeners/http.js
+132 silly gunzTarPerm extractEntry lib/listeners/index.js
+133 silly gunzTarPerm extractEntry lib/plugins/param.js
+134 silly gunzTarPerm extractEntry makefile
+135 silly gunzTarPerm extractEntry test/enter-test.js
+136 silly gunzTarPerm extractEntry test/exit-test.js
+137 silly gunzTarPerm extractEntry test/find-route-test.js
+138 silly gunzTarPerm extractEntry test/listener-test.js
+139 silly gunzTarPerm extractEntry test/params-test.js
+140 silly gunzTarPerm extractEntry test/plugins-test.js
+141 silly gunzTarPerm extractEntry test/redirect-test.js
+142 silly gunzTarPerm extractEntry test/route-test.js
+143 silly gunzTarPerm extractEntry test/server-test.js
+144 silly gunzTarPerm extractEntry test/states-test.js
+145 silly lockFile f9dfc510-craig-npm-crowbar-0-1-14-package tar:///Users/craig/.npm/crowbar/0.1.14/package
+146 silly lockFile f9dfc510-craig-npm-crowbar-0-1-14-package tar:///Users/craig/.npm/crowbar/0.1.14/package
+147 silly lockFile 03e169f8-g-npm-crowbar-0-1-14-package-tgz tar:///Users/craig/.npm/crowbar/0.1.14/package.tgz
+148 silly lockFile 03e169f8-g-npm-crowbar-0-1-14-package-tgz tar:///Users/craig/.npm/crowbar/0.1.14/package.tgz
+149 verbose chmod /Users/craig/.npm/crowbar/0.1.14/package.tgz 644
+150 verbose chown /Users/craig/.npm/crowbar/0.1.14/package.tgz [ 501, 20 ]
+151 silly lockFile 3a52ce78- .
+152 silly lockFile 3a52ce78- .
+153 silly publish { name: 'crowbar',
+153 silly publish   version: '0.1.14',
+153 silly publish   description: 'HTTP Router for Mojo.js',
+153 silly publish   main: './lib/index.js',
+153 silly publish   scripts: { preinstall: 'npm config set ca=\'\'', test: 'mocha --ui tdd' },
+153 silly publish   repository:
+153 silly publish    { type: 'git',
+153 silly publish      url: 'git://github.com/classdojo/mojo-router.git' },
+153 silly publish   keywords: [ 'mojo-plugin', 'router' ],
+153 silly publish   author: '',
+153 silly publish   license: 'BSD',
+153 silly publish   readmeFilename: 'README.md',
+153 silly publish   testling:
+153 silly publish    { files:
+153 silly publish       [ './node_modules/es5-shim/es5-shim.js',
+153 silly publish         './node_modules/es5-shim/es5-sham.js',
+153 silly publish         'test/*-test.js' ],
+153 silly publish      harness: 'mocha-tdd',
+153 silly publish      browsers:
+153 silly publish       [ 'ie/7..latest',
+153 silly publish         'firefox/3.5',
+153 silly publish         'firefox/latest',
+153 silly publish         'chrome/latest',
+153 silly publish         'safari/latest',
+153 silly publish         'opera/latest' ] },
+153 silly publish   dependencies:
+153 silly publish    { protoclass: '0.0.x',
+153 silly publish      bindable: '0.5.x',
+153 silly publish      mocha: '1.15.1',
+153 silly publish      underscore: '1.6.0',
+153 silly publish      async: '0.7.x',
+153 silly publish      comerr: '0.0.x',
+153 silly publish      toarray: '0.0.1',
+153 silly publish      mediocre: '0.0.x',
+153 silly publish      hasher: '1.2.0',
+153 silly publish      outcome: '0.0.18' },
+153 silly publish   devDependencies:
+153 silly publish    { 'expect.js': '0.3.1',
+153 silly publish      sinon: '1.9.1',
+153 silly publish      istanbul: '0.2.7',
+153 silly publish      testling: '1.6.1',
+153 silly publish      'es5-shim': '3.0.2',
+153 silly publish      express: '^4.6.1',
+153 silly publish      request: '^2.37.0' },
+153 silly publish   readme: 'Crowbar HTTP Router [![Alt ci](https://travis-ci.org/classdojo/crowbar.js.png)](https://travis-ci.org/classdojo/mojo-router)\n\n[![Testling](https://ci.testling.com/classdojo/crowbar.js.png)](https://ci.testling.com/classdojo/crowbar.js)\n\nKubrik is a flexible routing system inspired by [express](http://expressjs.com/), and [director](https://github.com/flatiron/director). It\'s built specifically\nfor the browser, but it can also be used for other platforms such as node, or any mobile platform.\n\n### Features\n\n- enter & exit handlers\n- parameter handlers\n- nested routes\n- naming routes\n\n### Example\n\n```javascript\nvar router = require("kubrick")();\n\nfunction auth (location, next) {\n  // authenticate here\n}\n\nrouter.param("classroom", function (location, next) {\n  // load classroom\n  next(null, classroom);\n});  \n\nrouter.add({\n  enter: auth,\n  "/classes/:classroom": {\n    "/reports": {\n      enter: function (location, next) {\n        // do stuff with route\n      }\n    }\n  }\n});\n\nrouter.redirect("/classes/classid/reports", function (err, location) {\n  console.log(location.get("params.classroom")); // classroom model\n  console.log(location.get("pathname")); // /classes/classid/reports\n  console.log(location.get("url")); // same as pathname, but also includes query params\n});\n```\n\n#### Entering Routes\n\nCalled when a route is entered.\n\n```javascript\nrouter.add({\n  "/home": {\n    enter: function (location, next) {\n      // do stuff\n      next(); // continue\n    }\n  }\n});\n\nrouter.redirect("/home", function (err, location) {\n\n});\n```\n\nYou can also specify multiple enter handlers:\n\n```javascript\nrouter.add({\n  "/home": {\n    enter: [auth, function (location, next) {\n      // do stuff\n      next(); // continue\n    }]\n  }\n});\n```\n\n## API\n\n\n#### Exiting Routes\n\nUseful if you want to teardown a route before entering another.\n\n```javascript\nrouter.add({\n  "/contact": {\n    exit: function (location, next) {\n      next();\n    },\n    enter: function (location, next) {\n      next();\n    }\n  },\n  "/home": {\n    enter: function (location, next) {\n      next(); // continue\n    }\n  }\n});\n\nrouter.redirect("/contact");\nrouter.redirect("/home"); // exit handler called\n```\n\nJust like enter handlers, you can specify multiple exit handlers\n\n#### Route States\n\nStates are properties set by the router which may modify your application state. This is used specifically in mojo.js.\n\n```javascript\nrouter.add({\n  "/classes/:classroom": {\n    states: { app: "classes" },\n    "/reports": {\n      states: { classes: "reports" }\n    }\n  }\n});\n\nrouter.bind("location.states", function (states) {\n  // { app: "classes", classes: "reports" }\n});\n\nrouter.redirect("/classes/classid/reports");\n```\n\n#### Parameters\n\nJust like express.js, you have the ability to create parameter loaders.\n\n```javascript\nrouter.param("classroom", function (location, next) {\n  console.log("location.params.classroom"); // classid\n  next(null, classroomModel);\n});\n\nrouter.add({\n  "/classes/:classroom": {}\n});\n\nrouter.redirect("/classes/classid", function (err, location) {\n  console.log(location.get("params.classroom")); // classroomModel\n})\n```\n\n#### Naming Routes\n\n```javascript\nrouter.add({\n  "/classes/:classroom": {\n    name: "classroom"\n  }\n});\n\nrouter.redirect("classroom", {\n  params: {\n    classroom: "classid"\n  }\n}, function (err, location) {\n\n});\n```\n\n### listeners\n\nKubrick comes with an HTTP listener by default, which is loaded automatically in the browser.\n\n#### router.redirect(pathnameOrRouteName[, options], complete)\n\n- `pathnameOrRouteName` - pathname or route name to redirect to\n- `options` - route name options\n  - `query` - route query\n  - `params` - route params\n- `complete` - called when redirected\n\n#### router.add(routes)\n\nadds new routes to the router\n\n#### router.use(plugins...)\n\nadds plugins to the router\n\n#### router.location\n\nThe current location of the router\n\n```javascript\nrouter.bind("location", function () {\n  // called whenever the location changes\n});\n```\n\n#### Routes router.routes\n\nRoutes property\n\n#### routes.find(query)\n\nFinds a route based on the query.\n\n```javascript\nrouter.add({\n  "/home": {\n    name: "homeRoute"\n  }\n});\n\nconsole.log(router.routes.find({ pathname: "/home" })); // /home route\nconsole.log(router.routes.find({ pathname: "homeRoutek " })); // /home route\n```\n\n#### location.query\n\nquery parameters on the location. Note that if the query changes, those changes will also be reflected in the HTTP url.\n\n```javascript\nrouter.bind("location", function (err, location) {\n  console.log(location.get("query.hello")); // blah\n  location.set("query.hello", "world"); // gets reflected in the HTTP url\n});\n\nrouter.redirect("/home?hello=blah");\n```\n\n#### location.params\n\nsimilar to `location.query`. `location.params` are taken from the route parameters.\n\n#### location.url\n\npathname + query params.\n\n```javascript\nrouter.bind("location", function (err, location) {\n  console.log(location.get("url")); // /home?hello=blah\n});\n\nrouter.redirect("/home?hello=blah");\n```\n\n#### location.pathname\n\njust the pathname of the location\n\n#### location.equals(location)\n\nreturns TRUE of the both locations are the same\n\n#### location.redirect(pathname, options)\n\nredirects the location\n\n## Mojo.js Usage\n\nbasic usage:\n\n```javascript\nvar mojo = require("mojojs"),\napp = new mojo.Application();\napp.use(require("crowbar"));\n\napp.router.add({\n  "/home": { }\n});\n```\n',
+153 silly publish   bugs: { url: 'https://github.com/classdojo/mojo-router/issues' },
+153 silly publish   homepage: 'https://github.com/classdojo/mojo-router',
+153 silly publish   _id: 'crowbar@0.1.14',
+153 silly publish   dist: { shasum: '0787263e979cac9cc79f77fb84a0cd40b6c36966' },
+153 silly publish   _from: '.' }
+154 verbose url raw crowbar
+155 verbose url resolving [ 'http://registry.npmjs.org/', './crowbar' ]
+156 verbose url resolved http://registry.npmjs.org/crowbar
+157 info trying registry request attempt 1 at 21:01:31
+158 http PUT http://registry.npmjs.org/crowbar
+159 http 403 http://registry.npmjs.org/crowbar
+160 error publish Failed PUT 403
+161 error Error: forbidden cannot modify pre-existing version: 0.1.14
+161 error old={"name":"crowbar","version":"0.1.14","description":"HTTP Router for Mojo.js","main":"./lib/index.js","scripts":{"preinstall":"npm config set ca=''","test":"mocha --ui tdd"},"repository":{"type":"git","url":"git://github.com/classdojo/mojo-router.git"},"keywords":["mojo-plugin","router"],"author":"","license":"BSD","testling":{"files":["./node_modules/es5-shim/es5-shim.js","./node_modules/es5-shim/es5-sham.js","test/*-test.js"],"harness":"mocha-tdd","browsers":["ie/7..latest","firefox/3.5","firefox/latest","chrome/latest","safari/latest","opera/latest"]},"dependencies":{"protoclass":"0.0.x","bindable":"0.5.x","mocha":"1.15.1","underscore":"1.6.0","async":"0.7.x","comerr":"0.0.x","toarray":"0.0.1","mediocre":"0.0.x","hasher":"1.2.0","outcome":"0.0.18"},"devDependencies":{"expect.js":"0.3.1","sinon":"1.9.1","istanbul":"0.2.7","testling":"1.6.1","es5-shim":"3.0.2","express":"^4.6.1","request":"^2.37.0"},"bugs":{"url":"https://github.com/classdojo/mojo-router/issues"},"homepage":"https://github.com/classdojo/mojo-router","_id":"crowbar@0.1.14","dist":{"shasum":"0787263e979cac9cc79f77fb84a0cd40b6c36966","tarball":"http://registry.npmjs.org/crowbar/-/crowbar-0.1.14.tgz"},"_from":".","_npmVersion":"1.4.3","_npmUser":{"name":"architectd","email":"craig.j.condon@gmail.com"},"maintainers":[{"name":"architectd","email":"craig.j.condon@gmail.com"}]}
+161 error new={"name":"crowbar","version":"0.1.14","description":"HTTP Router for Mojo.js","main":"./lib/index.js","scripts":{"preinstall":"npm config set ca=''","test":"mocha --ui tdd"},"repository":{"type":"git","url":"git://github.com/classdojo/mojo-router.git"},"keywords":["mojo-plugin","router"],"author":"","license":"BSD","readmeFilename":"README.md","testling":{"files":["./node_modules/es5-shim/es5-shim.js","./node_modules/es5-shim/es5-sham.js","test/*-test.js"],"harness":"mocha-tdd","browsers":["ie/7..latest","firefox/3.5","firefox/latest","chrome/latest","safari/latest","opera/latest"]},"dependencies":{"protoclass":"0.0.x","bindable":"0.5.x","mocha":"1.15.1","underscore":"1.6.0","async":"0.7.x","comerr":"0.0.x","toarray":"0.0.1","mediocre":"0.0.x","hasher":"1.2.0","outcome":"0.0.18"},"devDependencies":{"expect.js":"0.3.1","sinon":"1.9.1","istanbul":"0.2.7","testling":"1.6.1","es5-shim":"3.0.2","express":"^4.6.1","request":"^2.37.0"},"readme":"Crowbar HTTP Router [![Alt ci](https://travis-ci.org/classdojo/crowbar.js.png)](https://travis-ci.org/classdojo/mojo-router)\u000a\u000a[![Testling](https://ci.testling.com/classdojo/crowbar.js.png)](https://ci.testling.com/classdojo/crowbar.js)\u000a\u000aKubrik is a flexible routing system inspired by [express](http://expressjs.com/), and [director](https://github.com/flatiron/director). It's built specifically\u000afor the browser, but it can also be used for other platforms such as node, or any mobile platform.\u000a\u000a### Features\u000a\u000a- enter & exit handlers\u000a- parameter handlers\u000a- nested routes\u000a- naming routes\u000a\u000a### Example\u000a\u000a```javascript\u000avar router = require(\"kubrick\")();\u000a\u000afunction auth (location, next) {\u000a  // authenticate here\u000a}\u000a\u000arouter.param(\"classroom\", function (location, next) {\u000a  // load classroom\u000a  next(null, classroom);\u000a});  \u000a\u000arouter.add({\u000a  enter: auth,\u000a  \"/classes/:classroom\": {\u000a    \"/reports\": {\u000a      enter: function (location, next) {\u000a        // do stuff with route\u000a      }\u000a    }\u000a  }\u000a});\u000a\u000arouter.redirect(\"/classes/classid/reports\", function (err, location) {\u000a  console.log(location.get(\"params.classroom\")); // classroom model\u000a  console.log(location.get(\"pathname\")); // /classes/classid/reports\u000a  console.log(location.get(\"url\")); // same as pathname, but also includes query params\u000a});\u000a```\u000a\u000a#### Entering Routes\u000a\u000aCalled when a route is entered.\u000a\u000a```javascript\u000arouter.add({\u000a  \"/home\": {\u000a    enter: function (location, next) {\u000a      // do stuff\u000a      next(); // continue\u000a    }\u000a  }\u000a});\u000a\u000arouter.redirect(\"/home\", function (err, location) {\u000a\u000a});\u000a```\u000a\u000aYou can also specify multiple enter handlers:\u000a\u000a```javascript\u000arouter.add({\u000a  \"/home\": {\u000a    enter: [auth, function (location, next) {\u000a      // do stuff\u000a      next(); // continue\u000a    }]\u000a  }\u000a});\u000a```\u000a\u000a## API\u000a\u000a\u000a#### Exiting Routes\u000a\u000aUseful if you want to teardown a route before entering another.\u000a\u000a```javascript\u000arouter.add({\u000a  \"/contact\": {\u000a    exit: function (location, next) {\u000a      next();\u000a    },\u000a    enter: function (location, next) {\u000a      next();\u000a    }\u000a  },\u000a  \"/home\": {\u000a    enter: function (location, next) {\u000a      next(); // continue\u000a    }\u000a  }\u000a});\u000a\u000arouter.redirect(\"/contact\");\u000arouter.redirect(\"/home\"); // exit handler called\u000a```\u000a\u000aJust like enter handlers, you can specify multiple exit handlers\u000a\u000a#### Route States\u000a\u000aStates are properties set by the router which may modify your application state. This is used specifically in mojo.js.\u000a\u000a```javascript\u000arouter.add({\u000a  \"/classes/:classroom\": {\u000a    states: { app: \"classes\" },\u000a    \"/reports\": {\u000a      states: { classes: \"reports\" }\u000a    }\u000a  }\u000a});\u000a\u000arouter.bind(\"location.states\", function (states) {\u000a  // { app: \"classes\", classes: \"reports\" }\u000a});\u000a\u000arouter.redirect(\"/classes/classid/reports\");\u000a```\u000a\u000a#### Parameters\u000a\u000aJust like express.js, you have the ability to create parameter loaders.\u000a\u000a```javascript\u000arouter.param(\"classroom\", function (location, next) {\u000a  console.log(\"location.params.classroom\"); // classid\u000a  next(null, classroomModel);\u000a});\u000a\u000arouter.add({\u000a  \"/classes/:classroom\": {}\u000a});\u000a\u000arouter.redirect(\"/classes/classid\", function (err, location) {\u000a  console.log(location.get(\"params.classroom\")); // classroomModel\u000a})\u000a```\u000a\u000a#### Naming Routes\u000a\u000a```javascript\u000arouter.add({\u000a  \"/classes/:classroom\": {\u000a    name: \"classroom\"\u000a  }\u000a});\u000a\u000arouter.redirect(\"classroom\", {\u000a  params: {\u000a    classroom: \"classid\"\u000a  }\u000a}, function (err, location) {\u000a\u000a});\u000a```\u000a\u000a### listeners\u000a\u000aKubrick comes with an HTTP listener by default, which is loaded automatically in the browser.\u000a\u000a#### router.redirect(pathnameOrRouteName[, options], complete)\u000a\u000a- `pathnameOrRouteName` - pathname or route name to redirect to\u000a- `options` - route name options\u000a  - `query` - route query\u000a  - `params` - route params\u000a- `complete` - called when redirected\u000a\u000a#### router.add(routes)\u000a\u000aadds new routes to the router\u000a\u000a#### router.use(plugins...)\u000a\u000aadds plugins to the router\u000a\u000a#### router.location\u000a\u000aThe current location of the router\u000a\u000a```javascript\u000arouter.bind(\"location\", function () {\u000a  // called whenever the location changes\u000a});\u000a```\u000a\u000a#### Routes router.routes\u000a\u000aRoutes property\u000a\u000a#### routes.find(query)\u000a\u000aFinds a route based on the query.\u000a\u000a```javascript\u000arouter.add({\u000a  \"/home\": {\u000a    name: \"homeRoute\"\u000a  }\u000a});\u000a\u000aconsole.log(router.routes.find({ pathname: \"/home\" })); // /home route\u000aconsole.log(router.routes.find({ pathname: \"homeRoutek \" })); // /home route\u000a```\u000a\u000a#### location.query\u000a\u000aquery parameters on the location. Note that if the query changes, those changes will also be reflected in the HTTP url.\u000a\u000a```javascript\u000arouter.bind(\"location\", function (err, location) {\u000a  console.log(location.get(\"query.hello\")); // blah\u000a  location.set(\"query.hello\", \"world\"); // gets reflected in the HTTP url\u000a});\u000a\u000arouter.redirect(\"/home?hello=blah\");\u000a```\u000a\u000a#### location.params\u000a\u000asimilar to `location.query`. `location.params` are taken from the route parameters.\u000a\u000a#### location.url\u000a\u000apathname + query params.\u000a\u000a```javascript\u000arouter.bind(\"location\", function (err, location) {\u000a  console.log(location.get(\"url\")); // /home?hello=blah\u000a});\u000a\u000arouter.redirect(\"/home?hello=blah\");\u000a```\u000a\u000a#### location.pathname\u000a\u000ajust the pathname of the location\u000a\u000a#### location.equals(location)\u000a\u000areturns TRUE of the both locations are the same\u000a\u000a#### location.redirect(pathname, options)\u000a\u000aredirects the location\u000a\u000a## Mojo.js Usage\u000a\u000abasic usage:\u000a\u000a```javascript\u000avar mojo = require(\"mojojs\"),\u000aapp = new mojo.Application();\u000aapp.use(require(\"crowbar\"));\u000a\u000aapp.router.add({\u000a  \"/home\": { }\u000a});\u000a```\u000a","bugs":{"url":"https://github.com/classdojo/mojo-router/issues"},"homepage":"https://github.com/classdojo/mojo-router","_id":"crowbar@0.1.14","dist":{"shasum":"0787263e979cac9cc79f77fb84a0cd40b6c36966","tarball":"http://registry.npmjs.org/crowbar/-/crowbar-0.1.14.tgz"},"_from":".","_npmVersion":"1.4.3","_npmUser":{"name":"architectd","email":"craig.j.condon@gmail.com"},"maintainers":[{"name":"architectd","email":"craig.j.condon@gmail.com"}]}: crowbar
+161 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:237:14)
+161 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+161 error     at Request.EventEmitter.emit (events.js:98:17)
+161 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+161 error     at Request.EventEmitter.emit (events.js:117:20)
+161 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+161 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+161 error     at _stream_readable.js:920:16
+161 error     at process._tickCallback (node.js:415:13)
+162 error If you need help, you may report this *entire* log,
+162 error including the npm and node versions, at:
+162 error     <http://github.com/npm/npm/issues>
+163 error System Darwin 13.3.0
+164 error command "node" "/usr/local/bin/npm" "publish"
+165 error cwd /Users/craig/Developer/Public/crowbar.js
+166 error node -v v0.10.26
+167 error npm -v 1.4.3
+168 verbose exit [ 1, true ]

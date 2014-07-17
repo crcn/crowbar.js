@@ -287,6 +287,22 @@ describe("redirect#", function () {
     });
   });
 
+  it("can redirect with query params", function (next) {
+    var r = router().add({
+      "/a": {
+        redirect: "/b?c=d"
+      },
+      "/b": {
+
+      }
+    });
+
+    r.redirect("/a", function () {
+      expect(r.get("location.url")).to.be("/b?c=d");
+      next();
+    })
+  });
+
   it("can redirect to a route name twice with different params", function (next) {
     var r = router().add({
       "/:a": {
