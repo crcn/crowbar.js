@@ -133,4 +133,5 @@ describe("basic#", function () {
       expect(r.routes.all()[i].pathname).to.be(order[i]);
     }
   });
+
 });
