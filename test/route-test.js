@@ -174,7 +174,7 @@ describe("basic#", function () {
 
   it("fills in undefined params as undefined", function () {
     var r = router().add({
-      "/a/:b": {
+      "/a/:bcd": {
         match: function (query) {
           return true;
         }
