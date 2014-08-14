@@ -1,0 +1,135 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.30
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/craig/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/craig/.npm/crowbar/0.1.22/package.tgz', '.' ]
+11 verbose tarball /Users/craig/.npm/crowbar/0.1.22/package.tgz
+12 verbose folder .
+13 info prepublish crowbar@0.1.22
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/craig/.npm/1f1177db-tar.lock
+16 silly lockFile 875c1080-g-npm-crowbar-0-1-22-package-tgz tar:///Users/craig/.npm/crowbar/0.1.22/package.tgz
+17 verbose lock tar:///Users/craig/.npm/crowbar/0.1.22/package.tgz /Users/craig/.npm/875c1080-g-npm-crowbar-0-1-22-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 875c1080-g-npm-crowbar-0-1-22-package-tgz tar:///Users/craig/.npm/crowbar/0.1.22/package.tgz
+21 silly lockFile 875c1080-g-npm-crowbar-0-1-22-package-tgz tar:///Users/craig/.npm/crowbar/0.1.22/package.tgz
+22 silly lockFile 4d7ec7b3-craig-npm-crowbar-0-1-22-package /Users/craig/.npm/crowbar/0.1.22/package
+23 verbose lock /Users/craig/.npm/crowbar/0.1.22/package /Users/craig/.npm/4d7ec7b3-craig-npm-crowbar-0-1-22-package.lock
+24 silly lockFile 4d7ec7b3-craig-npm-crowbar-0-1-22-package /Users/craig/.npm/crowbar/0.1.22/package
+25 silly lockFile 4d7ec7b3-craig-npm-crowbar-0-1-22-package /Users/craig/.npm/crowbar/0.1.22/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'crowbar',
+28 silly publish   version: '0.1.22',
+28 silly publish   description: 'HTTP Router for Mojo.js',
+28 silly publish   main: './lib/index.js',
+28 silly publish   scripts: { test: 'mocha --ui tdd' },
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'git://github.com/classdojo/mojo-router.git' },
+28 silly publish   keywords: [ 'mojo-plugin', 'router' ],
+28 silly publish   author: '',
+28 silly publish   license: 'BSD',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   testling:
+28 silly publish    { files:
+28 silly publish       [ './node_modules/es5-shim/es5-shim.js',
+28 silly publish         './node_modules/es5-shim/es5-sham.js',
+28 silly publish         'test/*-test.js' ],
+28 silly publish      harness: 'mocha-tdd',
+28 silly publish      browsers:
+28 silly publish       [ 'ie/7..latest',
+28 silly publish         'firefox/3.5',
+28 silly publish         'firefox/latest',
+28 silly publish         'chrome/latest',
+28 silly publish         'safari/latest',
+28 silly publish         'opera/latest' ] },
+28 silly publish   dependencies:
+28 silly publish    { protoclass: '0.0.x',
+28 silly publish      bindable: '0.5.x',
+28 silly publish      mocha: '1.15.1',
+28 silly publish      underscore: '1.6.0',
+28 silly publish      async: '0.7.x',
+28 silly publish      comerr: '0.0.x',
+28 silly publish      toarray: '0.0.1',
+28 silly publish      mediocre: '0.0.x',
+28 silly publish      hasher: '1.2.0',
+28 silly publish      outcome: '0.0.18' },
+28 silly publish   devDependencies:
+28 silly publish    { 'expect.js': '0.3.1',
+28 silly publish      sinon: '1.9.1',
+28 silly publish      istanbul: '0.2.7',
+28 silly publish      testling: '1.6.1',
+28 silly publish      'es5-shim': '3.0.2',
+28 silly publish      express: '^4.6.1',
+28 silly publish      request: '^2.37.0' },
+28 silly publish   readme: 'Crowbar HTTP Router [![Alt ci](https://travis-ci.org/classdojo/crowbar.js.png)](https://travis-ci.org/classdojo/mojo-router)\n\n[![Testling](https://ci.testling.com/classdojo/crowbar.js.png)](https://ci.testling.com/classdojo/crowbar.js)\n\nCrowbar is a flexible routing system inspired by [express](http://expressjs.com/), and [director](https://github.com/flatiron/director). \n\n### Example\n\n```javascript\nvar router = require("crowbar")();\n\nfunction auth (location, next) {\n  // authenticate here\n}\n\nrouter.param("classroom", function (location, next) {\n  // load classroom\n  next(null, classroom);\n});  \n\nrouter.add({\n  enter: auth,\n  "/classes/:classroom": {\n    "/reports": {\n      enter: function (location, next) {\n        // do stuff with route\n      }\n    }\n  }\n});\n\nrouter.redirect("/classes/classid/reports", function (err, location) {\n  console.log(location.get("params.classroom")); // classroom model\n  console.log(location.get("pathname")); // /classes/classid/reports\n  console.log(location.get("url")); // same as pathname, but also includes query params\n});\n```\n\n#### Entering Routes\n\nCalled when a route is entered.\n\n```javascript\nrouter.add({\n  "/home": {\n    enter: function (location, next) {\n      // do stuff\n      next(); // continue\n    }\n  }\n});\n\nrouter.redirect("/home", function (err, location) {\n\n});\n```\n\nYou can also specify multiple enter handlers:\n\n```javascript\nrouter.add({\n  "/home": {\n    enter: [auth, function (location, next) {\n      // do stuff\n      next(); // continue\n    }]\n  }\n});\n```\n\n## API\n\n\n#### Exiting Routes\n\nUseful if you want to teardown a route before entering another.\n\n```javascript\nrouter.add({\n  "/contact": {\n    exit: function (location, next) {\n      next();\n    },\n    enter: function (location, next) {\n      next();\n    }\n  },\n  "/home": {\n    enter: function (location, next) {\n      next(); // continue\n    }\n  }\n});\n\nrouter.redirect("/contact");\nrouter.redirect("/home"); // exit handler called\n```\n\nJust like enter handlers, you can specify multiple exit handlers\n\n#### Route States\n\nStates are properties set by the router which may modify your application state. This is used specifically in mojo.js.\n\n```javascript\nrouter.add({\n  "/classes/:classroom": {\n    states: { app: "classes" },\n    "/reports": {\n      states: { classes: "reports" }\n    }\n  }\n});\n\nrouter.bind("location.states", function (states) {\n  // { app: "classes", classes: "reports" }\n});\n\nrouter.redirect("/classes/classid/reports");\n```\n\n#### Parameters\n\nJust like express.js, you have the ability to create parameter loaders.\n\n```javascript\nrouter.param("classroom", function (location, next) {\n  console.log("location.params.classroom"); // classid\n  next(null, classroomModel);\n});\n\nrouter.add({\n  "/classes/:classroom": {}\n});\n\nrouter.redirect("/classes/classid", function (err, location) {\n  console.log(location.get("params.classroom")); // classroomModel\n})\n```\n\n#### Naming Routes\n\n```javascript\nrouter.add({\n  "/classes/:classroom": {\n    name: "classroom"\n  }\n});\n\nrouter.redirect("classroom", {\n  params: {\n    classroom: "classid"\n  }\n}, function (err, location) {\n\n});\n```\n\n### listeners\n\nKubrick comes with an HTTP listener by default, which is loaded automatically in the browser.\n\n#### router.redirect(pathnameOrRouteName[, options], complete)\n\n- `pathnameOrRouteName` - pathname or route name to redirect to\n- `options` - route name options\n  - `query` - route query\n  - `params` - route params\n- `complete` - called when redirected\n\n#### router.add(routes)\n\nadds new routes to the router\n\n#### router.use(plugins...)\n\nadds plugins to the router\n\n#### router.location\n\nThe current location of the router\n\n```javascript\nrouter.bind("location", function () {\n  // called whenever the location changes\n});\n```\n\n#### Routes router.routes\n\nRoutes property\n\n#### routes.find(query)\n\nFinds a route based on the query.\n\n```javascript\nrouter.add({\n  "/home": {\n    name: "homeRoute"\n  }\n});\n\nconsole.log(router.routes.find({ pathname: "/home" })); // /home route\nconsole.log(router.routes.find({ pathname: "homeRoutek " })); // /home route\n```\n\n#### location.query\n\nquery parameters on the location. Note that if the query changes, those changes will also be reflected in the HTTP url.\n\n```javascript\nrouter.bind("location", function (err, location) {\n  console.log(location.get("query.hello")); // blah\n  location.set("query.hello", "world"); // gets reflected in the HTTP url\n});\n\nrouter.redirect("/home?hello=blah");\n```\n\n#### location.params\n\nsimilar to `location.query`. `location.params` are taken from the route parameters.\n\n#### location.url\n\npathname + query params.\n\n```javascript\nrouter.bind("location", function (err, location) {\n  console.log(location.get("url")); // /home?hello=blah\n});\n\nrouter.redirect("/home?hello=blah");\n```\n\n#### location.pathname\n\njust the pathname of the location\n\n#### location.equals(location)\n\nreturns TRUE of the both locations are the same\n\n#### location.redirect(pathname, options)\n\nredirects the location\n\n## Mojo.js Usage\n\nbasic usage:\n\n```javascript\nvar mojo = require("mojojs"),\napp = new mojo.Application();\napp.use(require("crowbar"));\n\napp.router.add({\n  "/home": { }\n});\n```\n',
+28 silly publish   gitHead: '85ad21ea49cb4888cff5a65967295b76a32b030d',
+28 silly publish   bugs: { url: 'https://github.com/classdojo/mojo-router/issues' },
+28 silly publish   homepage: 'https://github.com/classdojo/mojo-router',
+28 silly publish   _id: 'crowbar@0.1.22',
+28 silly publish   _shasum: '539f57cbcd7f4a44037157698ac6d81bc77d95fa',
+28 silly publish   _from: '.' }
+29 verbose request where is /crowbar
+30 verbose request registry http://registry.npmjs.org/
+31 verbose request id 6e5b43ab79a1007f
+32 verbose url raw /crowbar
+33 verbose url resolving [ 'http://registry.npmjs.org/', './crowbar' ]
+34 verbose url resolved http://registry.npmjs.org/crowbar
+35 verbose request where is http://registry.npmjs.org/crowbar
+36 info trying registry request attempt 1 at 12:57:26
+37 http PUT http://registry.npmjs.org/crowbar
+38 http 403 http://registry.npmjs.org/crowbar
+39 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '10436',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Thu, 14 Aug 2014 19:57:26 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-sjc3128-SJC',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1408046246.808006,VS0,VE152' }
+40 error publish Failed PUT 403
+41 error Error: forbidden cannot modify pre-existing version: 0.1.22
+41 error old={"name":"crowbar","version":"0.1.22","description":"HTTP Router for Mojo.js","main":"./lib/index.js","scripts":{"test":"mocha --ui tdd"},"repository":{"type":"git","url":"git://github.com/classdojo/mojo-router.git"},"keywords":["mojo-plugin","router"],"author":"","license":"BSD","testling":{"files":["./node_modules/es5-shim/es5-shim.js","./node_modules/es5-shim/es5-sham.js","test/*-test.js"],"harness":"mocha-tdd","browsers":["ie/7..latest","firefox/3.5","firefox/latest","chrome/latest","safari/latest","opera/latest"]},"dependencies":{"protoclass":"0.0.x","bindable":"0.5.x","mocha":"1.15.1","underscore":"1.6.0","async":"0.7.x","comerr":"0.0.x","toarray":"0.0.1","mediocre":"0.0.x","hasher":"1.2.0","outcome":"0.0.18"},"devDependencies":{"expect.js":"0.3.1","sinon":"1.9.1","istanbul":"0.2.7","testling":"1.6.1","es5-shim":"3.0.2","express":"^4.6.1","request":"^2.37.0"},"gitHead":"85ad21ea49cb4888cff5a65967295b76a32b030d","bugs":{"url":"https://github.com/classdojo/mojo-router/issues"},"homepage":"https://github.com/classdojo/mojo-router","_id":"crowbar@0.1.22","_shasum":"539f57cbcd7f4a44037157698ac6d81bc77d95fa","_from":".","_npmVersion":"1.4.21","_npmUser":{"name":"architectd","email":"craig.j.condon@gmail.com"},"maintainers":[{"name":"architectd","email":"craig.j.condon@gmail.com"}],"dist":{"shasum":"539f57cbcd7f4a44037157698ac6d81bc77d95fa","tarball":"http://registry.npmjs.org/crowbar/-/crowbar-0.1.22.tgz"}}
+41 error new={"name":"crowbar","version":"0.1.22","description":"HTTP Router for Mojo.js","main":"./lib/index.js","scripts":{"test":"mocha --ui tdd"},"repository":{"type":"git","url":"git://github.com/classdojo/mojo-router.git"},"keywords":["mojo-plugin","router"],"author":"","license":"BSD","readmeFilename":"README.md","testling":{"files":["./node_modules/es5-shim/es5-shim.js","./node_modules/es5-shim/es5-sham.js","test/*-test.js"],"harness":"mocha-tdd","browsers":["ie/7..latest","firefox/3.5","firefox/latest","chrome/latest","safari/latest","opera/latest"]},"dependencies":{"protoclass":"0.0.x","bindable":"0.5.x","mocha":"1.15.1","underscore":"1.6.0","async":"0.7.x","comerr":"0.0.x","toarray":"0.0.1","mediocre":"0.0.x","hasher":"1.2.0","outcome":"0.0.18"},"devDependencies":{"expect.js":"0.3.1","sinon":"1.9.1","istanbul":"0.2.7","testling":"1.6.1","es5-shim":"3.0.2","express":"^4.6.1","request":"^2.37.0"},"readme":"Crowbar HTTP Router [![Alt ci](https://travis-ci.org/classdojo/crowbar.js.png)](https://travis-ci.org/classdojo/mojo-router)\u000a\u000a[![Testling](https://ci.testling.com/classdojo/crowbar.js.png)](https://ci.testling.com/classdojo/crowbar.js)\u000a\u000aCrowbar is a flexible routing system inspired by [express](http://expressjs.com/), and [director](https://github.com/flatiron/director). \u000a\u000a### Example\u000a\u000a```javascript\u000avar router = require(\"crowbar\")();\u000a\u000afunction auth (location, next) {\u000a  // authenticate here\u000a}\u000a\u000arouter.param(\"classroom\", function (location, next) {\u000a  // load classroom\u000a  next(null, classroom);\u000a});  \u000a\u000arouter.add({\u000a  enter: auth,\u000a  \"/classes/:classroom\": {\u000a    \"/reports\": {\u000a      enter: function (location, next) {\u000a        // do stuff with route\u000a      }\u000a    }\u000a  }\u000a});\u000a\u000arouter.redirect(\"/classes/classid/reports\", function (err, location) {\u000a  console.log(location.get(\"params.classroom\")); // classroom model\u000a  console.log(location.get(\"pathname\")); // /classes/classid/reports\u000a  console.log(location.get(\"url\")); // same as pathname, but also includes query params\u000a});\u000a```\u000a\u000a#### Entering Routes\u000a\u000aCalled when a route is entered.\u000a\u000a```javascript\u000arouter.add({\u000a  \"/home\": {\u000a    enter: function (location, next) {\u000a      // do stuff\u000a      next(); // continue\u000a    }\u000a  }\u000a});\u000a\u000arouter.redirect(\"/home\", function (err, location) {\u000a\u000a});\u000a```\u000a\u000aYou can also specify multiple enter handlers:\u000a\u000a```javascript\u000arouter.add({\u000a  \"/home\": {\u000a    enter: [auth, function (location, next) {\u000a      // do stuff\u000a      next(); // continue\u000a    }]\u000a  }\u000a});\u000a```\u000a\u000a## API\u000a\u000a\u000a#### Exiting Routes\u000a\u000aUseful if you want to teardown a route before entering another.\u000a\u000a```javascript\u000arouter.add({\u000a  \"/contact\": {\u000a    exit: function (location, next) {\u000a      next();\u000a    },\u000a    enter: function (location, next) {\u000a      next();\u000a    }\u000a  },\u000a  \"/home\": {\u000a    enter: function (location, next) {\u000a      next(); // continue\u000a    }\u000a  }\u000a});\u000a\u000arouter.redirect(\"/contact\");\u000arouter.redirect(\"/home\"); // exit handler called\u000a```\u000a\u000aJust like enter handlers, you can specify multiple exit handlers\u000a\u000a#### Route States\u000a\u000aStates are properties set by the router which may modify your application state. This is used specifically in mojo.js.\u000a\u000a```javascript\u000arouter.add({\u000a  \"/classes/:classroom\": {\u000a    states: { app: \"classes\" },\u000a    \"/reports\": {\u000a      states: { classes: \"reports\" }\u000a    }\u000a  }\u000a});\u000a\u000arouter.bind(\"location.states\", function (states) {\u000a  // { app: \"classes\", classes: \"reports\" }\u000a});\u000a\u000arouter.redirect(\"/classes/classid/reports\");\u000a```\u000a\u000a#### Parameters\u000a\u000aJust like express.js, you have the ability to create parameter loaders.\u000a\u000a```javascript\u000arouter.param(\"classroom\", function (location, next) {\u000a  console.log(\"location.params.classroom\"); // classid\u000a  next(null, classroomModel);\u000a});\u000a\u000arouter.add({\u000a  \"/classes/:classroom\": {}\u000a});\u000a\u000arouter.redirect(\"/classes/classid\", function (err, location) {\u000a  console.log(location.get(\"params.classroom\")); // classroomModel\u000a})\u000a```\u000a\u000a#### Naming Routes\u000a\u000a```javascript\u000arouter.add({\u000a  \"/classes/:classroom\": {\u000a    name: \"classroom\"\u000a  }\u000a});\u000a\u000arouter.redirect(\"classroom\", {\u000a  params: {\u000a    classroom: \"classid\"\u000a  }\u000a}, function (err, location) {\u000a\u000a});\u000a```\u000a\u000a### listeners\u000a\u000aKubrick comes with an HTTP listener by default, which is loaded automatically in the browser.\u000a\u000a#### router.redirect(pathnameOrRouteName[, options], complete)\u000a\u000a- `pathnameOrRouteName` - pathname or route name to redirect to\u000a- `options` - route name options\u000a  - `query` - route query\u000a  - `params` - route params\u000a- `complete` - called when redirected\u000a\u000a#### router.add(routes)\u000a\u000aadds new routes to the router\u000a\u000a#### router.use(plugins...)\u000a\u000aadds plugins to the router\u000a\u000a#### router.location\u000a\u000aThe current location of the router\u000a\u000a```javascript\u000arouter.bind(\"location\", function () {\u000a  // called whenever the location changes\u000a});\u000a```\u000a\u000a#### Routes router.routes\u000a\u000aRoutes property\u000a\u000a#### routes.find(query)\u000a\u000aFinds a route based on the query.\u000a\u000a```javascript\u000arouter.add({\u000a  \"/home\": {\u000a    name: \"homeRoute\"\u000a  }\u000a});\u000a\u000aconsole.log(router.routes.find({ pathname: \"/home\" })); // /home route\u000aconsole.log(router.routes.find({ pathname: \"homeRoutek \" })); // /home route\u000a```\u000a\u000a#### location.query\u000a\u000aquery parameters on the location. Note that if the query changes, those changes will also be reflected in the HTTP url.\u000a\u000a```javascript\u000arouter.bind(\"location\", function (err, location) {\u000a  console.log(location.get(\"query.hello\")); // blah\u000a  location.set(\"query.hello\", \"world\"); // gets reflected in the HTTP url\u000a});\u000a\u000arouter.redirect(\"/home?hello=blah\");\u000a```\u000a\u000a#### location.params\u000a\u000asimilar to `location.query`. `location.params` are taken from the route parameters.\u000a\u000a#### location.url\u000a\u000apathname + query params.\u000a\u000a```javascript\u000arouter.bind(\"location\", function (err, location) {\u000a  console.log(location.get(\"url\")); // /home?hello=blah\u000a});\u000a\u000arouter.redirect(\"/home?hello=blah\");\u000a```\u000a\u000a#### location.pathname\u000a\u000ajust the pathname of the location\u000a\u000a#### location.equals(location)\u000a\u000areturns TRUE of the both locations are the same\u000a\u000a#### location.redirect(pathname, options)\u000a\u000aredirects the location\u000a\u000a## Mojo.js Usage\u000a\u000abasic usage:\u000a\u000a```javascript\u000avar mojo = require(\"mojojs\"),\u000aapp = new mojo.Application();\u000aapp.use(require(\"crowbar\"));\u000a\u000aapp.router.add({\u000a  \"/home\": { }\u000a});\u000a```\u000a","gitHead":"85ad21ea49cb4888cff5a65967295b76a32b030d","bugs":{"url":"https://github.com/classdojo/mojo-router/issues"},"homepage":"https://github.com/classdojo/mojo-router","_id":"crowbar@0.1.22","_shasum":"539f57cbcd7f4a44037157698ac6d81bc77d95fa","_from":".","_npmVersion":"1.4.21","_npmUser":{"name":"architectd","email":"craig.j.condon@gmail.com"},"maintainers":[{"name":"architectd","email":"craig.j.condon@gmail.com"}],"dist":{"shasum":"539f57cbcd7f4a44037157698ac6d81bc77d95fa","tarball":"http://registry.npmjs.org/crowbar/-/crowbar-0.1.22.tgz"}}: crowbar
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:300:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:238:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:938:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 13.3.0
+44 error command "node" "/usr/local/bin/npm" "publish"
+45 error cwd /Users/craig/Developer/Public/crowbar.js
+46 error node -v v0.10.30
+47 error npm -v 1.4.21
+48 verbose exit [ 1, true ]

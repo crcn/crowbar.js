@@ -172,4 +172,16 @@ describe("basic#", function () {
     expect(r.routes.find({ pathname: "/a"}).pathname).to.be("/b");
   });
 
+  it("fills in undefined params as undefined", function () {
+    var r = router().add({
+      "/a/:b": {
+        match: function (query) {
+          return true;
+        }
+      }
+    });
+
+    expect(r.routes.find({ pathname: "/a/b"}).getPathnameWithParams({})).to.be("/a/undefined");
+  })
+
 });
