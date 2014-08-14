@@ -176,7 +176,7 @@ describe("basic#", function () {
     var r = router().add({
       "/a": {
         match: function (query) {
-          if (query.params && query.params.b) return { redirect: "/b" };
+          if (query.params && query.params.get("b")) return { redirect: "/b" };
           return true;
         }
       },
@@ -184,7 +184,7 @@ describe("basic#", function () {
     });
 
     var ar = r.routes.find({ pathname: "/a" });
-    expect(ar.getPathnameWithParams({ b: "c" })).to.be("/b");
+    expect(ar.getPathname({ params: { b: "c" }})).to.be("/b");
   });
 
   it("fills in undefined params as undefined", function () {
@@ -196,6 +196,6 @@ describe("basic#", function () {
       }
     });
 
-    expect(r.routes.find({ pathname: "/a/b"}).getPathnameWithParams({})).to.be("/a/undefined");
+    expect(r.routes.find({ pathname: "/a/b"}).getPathname({})).to.be("/a/undefined");
   });
 });
