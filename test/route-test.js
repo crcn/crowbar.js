@@ -134,4 +134,42 @@ describe("basic#", function () {
     }
   });
 
+  it("can setup a manual match and return false", function () {
+    var r = router().add({
+      "/a": {
+        match: function (query) {
+          return false;
+        }
+      },
+      "/:b": {}
+    });
+
+    expect(r.routes.find({ pathname: "/a"}).pathname).to.be("/:b");
+  });
+
+   it("can setup a manual match and return true", function () {
+    var r = router().add({
+      "/a": {
+        match: function (query) {
+          return true;
+        }
+      }
+    });
+
+    expect(r.routes.find({ pathname: "/a"}).pathname).to.be("/a");
+  });
+
+  it("can perform an internal redirect when searching for a route", function () {
+    var r = router().add({
+      "/a": {
+        match: function (query) {
+          return { redirect: "/b" };
+        }
+      },
+      "/b": {}
+    });
+
+    expect(r.routes.find({ pathname: "/a"}).pathname).to.be("/b");
+  });
+
 });
