@@ -172,6 +172,21 @@ describe("basic#", function () {
     expect(r.routes.find({ pathname: "/a"}).pathname).to.be("/b");
   });
 
+  it("performs a an internal if added params are different", function () {
+    var r = router().add({
+      "/a": {
+        match: function (query) {
+          if (query.params && query.params.b) return { redirect: "/b" };
+          return true;
+        }
+      },
+      "/b": {}
+    });
+
+    var ar = r.routes.find({ pathname: "/a" });
+    expect(ar.getPathnameWithParams({ b: "c" })).to.be("/b");
+  });
+
   it("fills in undefined params as undefined", function () {
     var r = router().add({
       "/a/:bcd": {
@@ -182,6 +197,5 @@ describe("basic#", function () {
     });
 
     expect(r.routes.find({ pathname: "/a/b"}).getPathnameWithParams({})).to.be("/a/undefined");
-  })
-
+  });
 });
