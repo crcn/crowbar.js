@@ -1,0 +1,297 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'i', 'bindable' ]
+2 info using npm@1.4.24
+3 info using node@v0.10.30
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'bindable@0.6.x', null ]
+6 verbose cache add name=undefined spec="bindable@0.6.x" args=["bindable@0.6.x",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'bindable@0.6.x',
+7 verbose parsed url   path: 'bindable@0.6.x',
+7 verbose parsed url   href: 'bindable@0.6.x' }
+8 verbose cache add name="bindable" spec="0.6.x" args=["bindable","0.6.x"]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: '0.6.x',
+9 verbose parsed url   path: '0.6.x',
+9 verbose parsed url   href: '0.6.x' }
+10 verbose addNamed [ 'bindable', '0.6.x' ]
+11 verbose addNamed [ null, '>=0.6.0-0 <0.7.0-0' ]
+12 silly lockFile a1f5bda4-bindable-0-6-x bindable@0.6.x
+13 verbose lock bindable@0.6.x /Users/craig/.npm/a1f5bda4-bindable-0-6-x.lock
+14 silly addNameRange { name: 'bindable', range: '>=0.6.0-0 <0.7.0-0', hasData: false }
+15 verbose request where is /bindable
+16 verbose request registry http://registry.npmjs.org/
+17 verbose request id 8a9923fc98de41d0
+18 verbose url raw /bindable
+19 verbose url resolving [ 'http://registry.npmjs.org/', './bindable' ]
+20 verbose url resolved http://registry.npmjs.org/bindable
+21 verbose request where is http://registry.npmjs.org/bindable
+22 info trying registry request attempt 1 at 22:25:31
+23 verbose etag "97R0SMEW2ATE78EVI2I0VDHD5"
+24 http GET http://registry.npmjs.org/bindable
+25 http 304 http://registry.npmjs.org/bindable
+26 silly registry.get cb [ 304,
+26 silly registry.get   { date: 'Fri, 10 Oct 2014 05:25:32 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     'last-modified': 'Fri, 10 Oct 2014 05:25:32 GMT',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     etag: '"97R0SMEW2ATE78EVI2I0VDHD5"',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-lax1427-LAX',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1412918732.256849,VS0,VE1',
+26 silly registry.get     vary: 'Accept' } ]
+27 verbose etag http://registry.npmjs.org/bindable from cache
+28 silly addNameRange number 2 { name: 'bindable', range: '>=0.6.0-0 <0.7.0-0', hasData: true }
+29 silly addNameRange versions [ 'bindable',
+29 silly addNameRange   [ '0.0.0',
+29 silly addNameRange     '0.1.0',
+29 silly addNameRange     '0.1.1',
+29 silly addNameRange     '0.1.2',
+29 silly addNameRange     '0.1.3',
+29 silly addNameRange     '0.1.4',
+29 silly addNameRange     '0.1.5',
+29 silly addNameRange     '0.1.6',
+29 silly addNameRange     '0.1.7',
+29 silly addNameRange     '0.2.1',
+29 silly addNameRange     '0.2.2',
+29 silly addNameRange     '0.2.3',
+29 silly addNameRange     '0.2.4',
+29 silly addNameRange     '0.2.5',
+29 silly addNameRange     '0.2.6',
+29 silly addNameRange     '0.2.7',
+29 silly addNameRange     '0.2.8',
+29 silly addNameRange     '0.2.9',
+29 silly addNameRange     '0.2.10',
+29 silly addNameRange     '0.2.12',
+29 silly addNameRange     '0.2.13',
+29 silly addNameRange     '0.2.14',
+29 silly addNameRange     '0.2.15',
+29 silly addNameRange     '0.2.16',
+29 silly addNameRange     '0.2.17',
+29 silly addNameRange     '0.2.18',
+29 silly addNameRange     '0.2.19',
+29 silly addNameRange     '0.2.20',
+29 silly addNameRange     '0.2.22',
+29 silly addNameRange     '0.2.23',
+29 silly addNameRange     '0.2.24',
+29 silly addNameRange     '0.2.25',
+29 silly addNameRange     '0.2.26',
+29 silly addNameRange     '0.2.27',
+29 silly addNameRange     '0.2.28',
+29 silly addNameRange     '0.2.29',
+29 silly addNameRange     '0.2.30',
+29 silly addNameRange     '0.2.31',
+29 silly addNameRange     '0.2.33',
+29 silly addNameRange     '0.2.35',
+29 silly addNameRange     '0.2.36',
+29 silly addNameRange     '0.2.37',
+29 silly addNameRange     '0.2.38',
+29 silly addNameRange     '0.2.39',
+29 silly addNameRange     '0.2.40',
+29 silly addNameRange     '0.2.41',
+29 silly addNameRange     '0.2.42',
+29 silly addNameRange     '0.2.43',
+29 silly addNameRange     '0.2.44',
+29 silly addNameRange     '0.2.46',
+29 silly addNameRange     '0.2.47',
+29 silly addNameRange     '0.2.48',
+29 silly addNameRange     '0.2.49',
+29 silly addNameRange     '0.2.50',
+29 silly addNameRange     '0.2.51',
+29 silly addNameRange     '0.2.52',
+29 silly addNameRange     '0.2.54',
+29 silly addNameRange     '0.2.55',
+29 silly addNameRange     '0.2.56',
+29 silly addNameRange     '0.2.57',
+29 silly addNameRange     '0.2.58',
+29 silly addNameRange     '0.2.61',
+29 silly addNameRange     '0.2.63',
+29 silly addNameRange     '0.2.65',
+29 silly addNameRange     '0.2.66',
+29 silly addNameRange     '0.3.1',
+29 silly addNameRange     '0.3.2',
+29 silly addNameRange     '0.3.3',
+29 silly addNameRange     '0.3.4',
+29 silly addNameRange     '0.3.5',
+29 silly addNameRange     '0.3.6',
+29 silly addNameRange     '0.3.7',
+29 silly addNameRange     '0.3.9',
+29 silly addNameRange     '0.3.10',
+29 silly addNameRange     '0.3.11',
+29 silly addNameRange     '0.3.13',
+29 silly addNameRange     '0.3.14',
+29 silly addNameRange     '0.3.15',
+29 silly addNameRange     '0.3.16',
+29 silly addNameRange     '0.3.18',
+29 silly addNameRange     '0.3.20',
+29 silly addNameRange     '0.3.21',
+29 silly addNameRange     '0.3.23',
+29 silly addNameRange     '0.3.25',
+29 silly addNameRange     '0.3.26',
+29 silly addNameRange     '0.3.27',
+29 silly addNameRange     '0.3.28',
+29 silly addNameRange     '0.3.29',
+29 silly addNameRange     '0.3.30',
+29 silly addNameRange     '0.3.32',
+29 silly addNameRange     '0.3.33',
+29 silly addNameRange     '0.3.34',
+29 silly addNameRange     '0.3.35',
+29 silly addNameRange     '0.3.36',
+29 silly addNameRange     '0.3.37',
+29 silly addNameRange     '0.3.38',
+29 silly addNameRange     '0.3.39',
+29 silly addNameRange     '0.4.0',
+29 silly addNameRange     '0.4.1',
+29 silly addNameRange     '0.4.2',
+29 silly addNameRange     '0.4.3',
+29 silly addNameRange     '0.4.4',
+29 silly addNameRange     '0.4.5',
+29 silly addNameRange     '0.4.6',
+29 silly addNameRange     '0.4.7',
+29 silly addNameRange     '0.4.8',
+29 silly addNameRange     '0.4.9',
+29 silly addNameRange     '0.4.10',
+29 silly addNameRange     '0.4.11',
+29 silly addNameRange     '0.4.13',
+29 silly addNameRange     '0.4.12',
+29 silly addNameRange     '0.4.14',
+29 silly addNameRange     '0.4.17',
+29 silly addNameRange     '0.4.18-g',
+29 silly addNameRange     '0.4.19',
+29 silly addNameRange     '0.4.20',
+29 silly addNameRange     '0.4.21',
+29 silly addNameRange     '0.5.0',
+29 silly addNameRange     '0.5.5',
+29 silly addNameRange     '0.5.6',
+29 silly addNameRange     '0.5.7',
+29 silly addNameRange     '0.5.8',
+29 silly addNameRange     '0.5.9',
+29 silly addNameRange     '0.5.11',
+29 silly addNameRange     '0.4.22',
+29 silly addNameRange     '0.4.23',
+29 silly addNameRange     '0.4.24',
+29 silly addNameRange     '0.5.12',
+29 silly addNameRange     '0.5.13',
+29 silly addNameRange     '0.5.15',
+29 silly addNameRange     '0.5.18',
+29 silly addNameRange     '0.5.19',
+29 silly addNameRange     '0.5.20',
+29 silly addNameRange     '0.5.21',
+29 silly addNameRange     '0.5.22',
+29 silly addNameRange     '0.5.23',
+29 silly addNameRange     '0.5.24',
+29 silly addNameRange     '0.5.26',
+29 silly addNameRange     '0.5.28',
+29 silly addNameRange     '0.5.29',
+29 silly addNameRange     '0.5.31',
+29 silly addNameRange     '0.5.32',
+29 silly addNameRange     '0.5.34',
+29 silly addNameRange     '0.5.35',
+29 silly addNameRange     '0.5.36',
+29 silly addNameRange     '0.5.37',
+29 silly addNameRange     '0.5.38',
+29 silly addNameRange     '0.5.39',
+29 silly addNameRange     '0.5.40',
+29 silly addNameRange     '0.5.42',
+29 silly addNameRange     '0.5.43',
+29 silly addNameRange     '0.5.44',
+29 silly addNameRange     '0.5.45',
+29 silly addNameRange     '0.5.46',
+29 silly addNameRange     '0.5.47',
+29 silly addNameRange     '0.6.0' ] ]
+30 verbose addNamed [ 'bindable', '0.6.0' ]
+31 verbose addNamed [ '0.6.0', '0.6.0' ]
+32 silly lockFile c387472c-bindable-0-6-0 bindable@0.6.0
+33 verbose lock bindable@0.6.0 /Users/craig/.npm/c387472c-bindable-0-6-0.lock
+34 silly lockFile c387472c-bindable-0-6-0 bindable@0.6.0
+35 silly lockFile c387472c-bindable-0-6-0 bindable@0.6.0
+36 silly lockFile a1f5bda4-bindable-0-6-x bindable@0.6.x
+37 silly lockFile a1f5bda4-bindable-0-6-x bindable@0.6.x
+38 silly resolved [ { name: 'bindable',
+38 silly resolved     version: '0.6.0',
+38 silly resolved     description: 'bindable.js ===========',
+38 silly resolved     main: './lib/index.js',
+38 silly resolved     scripts:
+38 silly resolved      { test: 'make lint; mocha --ui tdd',
+38 silly resolved        benchmark: 'node benchmark' },
+38 silly resolved     repository: { type: 'git', url: 'https://github.com/mojo-js/bindable.js' },
+38 silly resolved     author: '',
+38 silly resolved     license: 'MIT',
+38 silly resolved     readmeFilename: 'README.md',
+38 silly resolved     gitHead: '7edb2889d669a6f42b537b50772f9e86cf6337f1',
+38 silly resolved     testling: { files: [Object], harness: 'mocha-tdd', browsers: [Object] },
+38 silly resolved     dependencies:
+38 silly resolved      { underscore: '~1.4.4',
+38 silly resolved        toarray: '0.0.1',
+38 silly resolved        outcome: '0.0.x',
+38 silly resolved        'type-component': '0.0.x',
+38 silly resolved        protoclass: '0.0.5' },
+38 silly resolved     devDependencies:
+38 silly resolved      { benchmark: '~1.0.0',
+38 silly resolved        browserify: '~3.30.1',
+38 silly resolved        coveralls: '~2.6.0',
+38 silly resolved        'es5-shim': '2.3.0',
+38 silly resolved        'expect.js': '0.2.x',
+38 silly resolved        istanbul: '~0.2.1',
+38 silly resolved        jshint: '^2.5.4',
+38 silly resolved        mocha: '1.8.x',
+38 silly resolved        sardines: '0.4.x',
+38 silly resolved        structr: '0.2.x',
+38 silly resolved        testling: '~1.6.0' },
+38 silly resolved     readme: '\n[![Testling](https://ci.testling.com/classdojo/bindable.js.png)](https://ci.testling.com/classdojo/bindable.js)\n\nIncredibly flexible, fast bi-directional data binding library. \n\nTwo-way data binding means linking properties of two separate objects - when one changes, the other will automatically update with that change.  It enables much easier interactions between data models and UIs, among other uses outside of MVC.\n\nBindable.js is similar to Ember\'s data-binding system, except it doesn\'t include anything View related, so the library has many use-cases - whether replacing Backbone\'s Model, providing a way to maintain the state between server <-> client for a realtime front-end application (similar to Firebase), or perhaps a way to communicate between server <-> server for a realtime distributed Node.js application.\n\n\n### Projects using bindable.js\n\n- [Paperclip.js](https://github.com/classdojo/paperclip.js) - data-bindable templating engine.\n- [Sherpa.js](https://github.com/classdojo/sherpa.js) - online tours library\n- [Mojo.js](https://github.com/classdojo/mojo.js) - javascript MVC framework.\n- [AWSM](https://github.com/crcn/node-awsm) - aws library.\n- [ditto](https://github.com/browsertap/ditto.js) - synchronized user interactions across browsers.\n\n\n### BindableObject Example\n\n```javascript\nvar bindable = require("bindable");\n\nvar person = new bindable.Object({\n  name: "craig",\n  last: "condon",\n  location: {\n    city: "San Francisco"\n  }\n});\n\nperson.bind("location.zip", function(value) {\n  // 94102\n}).now();\n\n//triggers the binding\nperson.set("location.zip", "94102"); \n\n//bind location.zip to another property in the model, and do it only once\nperson.bind("location.zip", { to: "zip", max: 1 }).now();\n\n//bind location.zip to another object, and make it bi-directional.\nperson.bind("location.zip", { target: anotherModel, to: "location.zip", bothWays: true }).now();\n\n//chain to multiple items, and limit it!\nperson.bind("location.zip", { to: ["property", "anotherProperty"], max: 1 }).now();\n\n\n//you can also transform data as it\'s being bound\nperson.bind("name", {\n  to: "name2",\n  map: function (name) {\n    return name.toUpperCase();\n  }\n}).now();\n```\n\n### Benchmark\n\nBindable.js is pretty fast. Here are a few benchmarks on a Mac 2.3 GHz Intel Core i7 with 16 GB (1600 MHz DDR3) of memory.\n\n```\nbindable.on(\'event\', fn) 1 listener x 10,139,631 ops/sec ±0.47% (94 runs sampled)\nbindable.on(\'event\', fn) 2 listeners x 3,524,177 ops/sec ±0.32% (95 runs sampled)\nbindable.bind(\'name\', { to: fn }).dispose() x 602,661 ops/sec ±1.96% (85 runs sampled)\nbindable.bind(\'name\', fn).dispose() x 1,220,053 ops/sec ±0.57% (92 runs sampled)\nbindable.bind(\'city.zip\', fn).dispose() x 266,628 ops/sec ±1.01% (87 runs sampled)\nsub bindable.bind(\'friend.name\', fn).dispose() x 176,746 ops/sec ±1.04% (88 runs sampled)\nbindable.bind(\'a.b.c.d.e\', fn).dispose() x 143,059 ops/sec ±0.77% (91 runs sampled)\nnew bindable.Object() x 17,267,440 ops/sec ±0.72% (91 runs sampled)\nbindable.get(\'firstName\') x 14,650,011 ops/sec ±1.06% (88 runs sampled)\nbindable.get(\'city.zip\') x 5,896,941 ops/sec ±1.25% (91 runs sampled)\nbindable.get(\'a.b.c\') x 5,056,329 ops/sec ±0.97% (82 runs sampled)\nbindable.get(\'a.b.c.d\') x 4,661,307 ops/sec ±0.91% (90 runs sampled)\nbindable.get([\'city\',\'zip\']) x 28,287,374 ops/sec ±1.37% (81 runs sampled)\nbindable.set(\'firstName\', value) x 13,668,137 ops/sec ±0.98% (88 runs sampled)\nbindable.set([\'city\', \'zip\'], 55555) new x 1,895,868 ops/sec ±0.66% (95 runs sampled)\nbindable.set([\'city\', \'zip\'], 55555) existing x 1,939,437 ops/sec ±0.77% (86 runs sampled)\nbindable.set(\'city.zip\', 94111) new x 1,416,434 ops/sec ±0.69% (90 runs sampled)\nbindable.set(\'city.zip\', 94111) existing x 1,426,653 ops/sec ±0.85% (86 runs sampled)\n```\n\n## API\n\n#### value bindable.get(property)\n\nReturns a property on the bindable object\n\n```javascript\nvar bindable = new bindable.Object({ city: { name: "SF" } });\n\nconsole.log(bindable.get("city"));      // { name: "SF" }\nconsole.log(bindable.get("city.name")); // SF\n```\n\n#### bindable.set(property, value)\n\nSets a value to the bindable object\n\n```javascript\nvar obj = new bindable.Object();\nbindable.set("city.name", "SF");\nconsole.log(obj.get("city.name")); // SF\n```\n\n#### bindable.setProperties(properties)\n\nsets multiple properties on the bindable object\n\n```javascript\nvar person = new bindable.Object();\nperson.setProperties({\n  firstName: "Jon",\n  lastName: "Doe"\n});\nconsole.log(person.get("firstName"), person.get("lastName")); // Jon Doe\n```\n\n#### bindable.has(property)\n\nReturns true if the bindable object has a given property\n\n```javascript\nvar obj = new bindable.Object({ count: 0, male: false, name: "craig" });\n\nconsole.log(obj.has("count")); // true\nconsole.log(obj.has("male")); // true\nconsole.log(obj.has("name")); // true\nconsole.log(obj.has("city")); // false\n```\n\n#### Object bindable.context()\n\nreturns the context of the bindable object.\n\n```javascript\nvar context = {};\nvar obj     = new bindable.Object(context);\n\nconsole.log(obj.context() == context); // true\n```\n\n#### listener bindable.on(event, callback)\n\nadds a new listener to the bindable object\n\n#### bindable.emit(event[,args...])\n\nemits a new event\n\n#### bindable.once(event, callback)\n\nlistens to one event\n\n#### bindable.removeAllListeners([type])\n\nreturns all the listeners on the bindable object\n\n#### Events\n\nBindable objects emit a few events:\n\n- `change:*` - emitted when a property changes on the bindable object. E.g: `change:location.zip`.\n- `change` - emitted when any property changes on the bindable object\n- `watching` - emitted when a property is being watched\n- `dispose` - emitted when `dispose()` is called on a bindable object\n\n#### binding bindable.bind(from, options)\n\n`options` - the options for the binding\n  - `to` - the property to bind to. Can be a `string`, `array`, or `function`\n  - `target` - the target bindable object. Default is self\n  - `max` - max number of times to run the data-binding\n  - `when` - tests the data-bound value before setting\n  - `map` - transforms the data-bound value\n  - `bothWays` - makes the data-binding bi-directional.\n\n```javascript\nvar obj = new bindable.Object({ name: "craig" });\n\n//bind to name2\nobj.bind("name", "name2").now();\n\n//same as above, different style.\nobj.bind("name", { to: "name2" }).now();\n\n// bind the name, but transform it to upper case\nobj.bind("name", { to: "name2", map: function (name) {\n  return name.toUpperCase();\n}}).now();\n```\n\n\n#### binding.now()\n\nExecutes a binding now\n\n```javascript\nvar person = new bindable.Object({ name: "jeff" });\nperson.bind("name", function (name) {\n  // called ~ name = jeff\n}).now();\n\n// above is triggered\nperson.set("name", "joe");\n```\n\n#### binding.dispose()\n\nDisposes a binding\n\n```javascript\nvar person = new bindable.Object({ name: "jeff" });\n\nvar binding = person.bind("name", function (name) {\n  // called ~ name = jeff\n}).now();\n\nbinding.dispose();\n\nperson.set("name", "jake"); // binding not triggered\n```\n\n',
+38 silly resolved     bugs: { url: 'https://github.com/mojo-js/bindable.js/issues' },
+38 silly resolved     homepage: 'https://github.com/mojo-js/bindable.js',
+38 silly resolved     _id: 'bindable@0.6.0',
+38 silly resolved     _shasum: '7169a1fcd8d4b41f06c8ec244efab9beb2b43003',
+38 silly resolved     _from: 'bindable@0.6.x' } ]
+39 info install bindable@0.6.0 into /Users/craig/Developer/Public/crowbar.js
+40 info installOne bindable@0.6.0
+41 verbose node_modules/bindable unbuild
+42 info preuninstall bindable@0.5.46
+43 info uninstall bindable@0.5.46
+44 verbose true,/Users/craig/Developer/Public/crowbar.js/node_modules,/Users/craig/Developer/Public/crowbar.js/node_modules unbuild bindable@0.5.46
+45 info postuninstall bindable@0.5.46
+46 verbose node_modules/bindable unbuild
+47 info preuninstall bindable@0.5.46
+48 info uninstall bindable@0.5.46
+49 verbose true,/Users/craig/Developer/Public/crowbar.js/node_modules,/Users/craig/Developer/Public/crowbar.js/node_modules unbuild bindable@0.5.46
+50 info postuninstall bindable@0.5.46
+51 error error rolling back Error: EACCES, unlink '/Users/craig/Developer/Public/crowbar.js/node_modules/bindable/.npmignore'
+51 error error rolling back  bindable@0.6.0 { [Error: EACCES, unlink '/Users/craig/Developer/Public/crowbar.js/node_modules/bindable/.npmignore']
+51 error error rolling back   errno: 3,
+51 error error rolling back   code: 'EACCES',
+51 error error rolling back   path: '/Users/craig/Developer/Public/crowbar.js/node_modules/bindable/.npmignore' }
+52 error Error: EACCES, unlink '/Users/craig/Developer/Public/crowbar.js/node_modules/bindable/.npmignore'
+52 error  { [Error: EACCES, unlink '/Users/craig/Developer/Public/crowbar.js/node_modules/bindable/.npmignore']
+52 error   errno: 3,
+52 error   code: 'EACCES',
+52 error   path: '/Users/craig/Developer/Public/crowbar.js/node_modules/bindable/.npmignore' }
+53 error Please try running this command again as root/Administrator.
+54 error System Darwin 13.4.0
+55 error command "node" "/usr/local/bin/npm" "i" "bindable"
+56 error cwd /Users/craig/Developer/Public/crowbar.js
+57 error node -v v0.10.30
+58 error npm -v 1.4.24
+59 error path /Users/craig/Developer/Public/crowbar.js/node_modules/bindable/.npmignore
+60 error code EACCES
+61 error errno 3
+62 error stack Error: EACCES, unlink '/Users/craig/Developer/Public/crowbar.js/node_modules/bindable/.npmignore'
+63 verbose exit [ 3, true ]
