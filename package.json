@@ -1,6 +1,6 @@
 {
   "name": "crowbar",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "HTTP Router for Mojo.js",
   "main": "./lib/index.js",
   "scripts": {
@@ -41,7 +41,7 @@
     "async": "0.7.x",
     "comerr": "0.0.x",
     "toarray": "0.0.1",
-    "mediocre": "0.0.x",
+    "mediocre": "0.1.x",
     "hasher": "1.2.0",
     "outcome": "0.0.18"
   },
