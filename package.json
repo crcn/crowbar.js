@@ -1,6 +1,6 @@
 {
   "name": "crowbar",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "HTTP Router for Mojo.js",
   "main": "./lib/index.js",
   "scripts": {
@@ -34,16 +34,16 @@
     ]
   },
   "dependencies": {
-    "protoclass": "0.0.x",
-    "bindable": "0.6.x",
-    "mocha": "1.15.1",
-    "underscore": "1.6.0",
     "async": "0.7.x",
+    "bindable-object": "0.0.x",
     "comerr": "0.0.x",
-    "toarray": "0.0.1",
-    "mediocre": "0.1.x",
     "hasher": "1.2.0",
-    "outcome": "0.0.18"
+    "lodash": "^2.4.1",
+    "mediocre": "0.1.x",
+    "mocha": "1.15.1",
+    "outcome": "0.0.18",
+    "protoclass": "0.0.x",
+    "toarray": "0.0.1"
   },
   "devDependencies": {
     "expect.js": "0.3.1",
