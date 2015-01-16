@@ -126,4 +126,30 @@ describe("enter#", function () {
   });
 
 
+  it("can access a param in the enter handler", function (next) {
+    var i = 0;
+    var r = router();
+
+    r.param("a", function (location, next) {
+      expect(location.get("params.a")).to.be("d");
+      location.set("params.a", "b");
+      next();
+    });
+
+    r.add({
+      "/:a": {
+        enter: function (location) {
+          i++;
+          expect(location.params.a).to.be("b");
+        }
+      }
+    });
+
+
+    r.redirect("/d", function () {
+      expect(i).to.be(1);
+      next();
+    });
+  });
+
 });
